@@ -55,7 +55,7 @@ pip install onnxruntime-rocm -f https://repo.radeon.com/rocm/manylinux/rocm-rel-
 ## 📁 Utilisation
 
 ```bash
-python ghibli_onnx_video_pipeline.py \
+python ghibli_video_pipeline.py \
     --video chemin/vers/video.mp4 \
     --model models/Hayao.onnx \
     --preview \
@@ -137,6 +137,21 @@ Tu peux utiliser tous les modèles AnimeGANv2 :
   <img src="Exemples/frame_originale.png" alt="Frame originale" width="40%" style="display:inline-block; margin-right:10px;"/>
   <img src="Exemples/frame_traité.png" alt="Frame stylisée" width="40%" style="display:inline-block;"/>
 </p>
+
+---
+
+## 🧼 .gitignore recommandé
+
+Pour ne pas versionner les images générées automatiquement, ajoute ceci à ton `.gitignore` :
+
+```gitignore
+AnimeGANv2/
+frames/
+styled_frames/
+temp_video.mp4
+temp_audio.aac
+output_stylized.mp4
+```
 
 ---
 
