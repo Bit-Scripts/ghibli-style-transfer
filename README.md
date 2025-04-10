@@ -140,21 +140,6 @@ Tu peux utiliser tous les modèles AnimeGANv2 :
 
 ---
 
-## 🧼 .gitignore recommandé
-
-Pour ne pas versionner les images générées automatiquement, ajoute ceci à ton `.gitignore` :
-
-```gitignore
-AnimeGANv2/
-frames/
-styled_frames/
-temp_video.mp4
-temp_audio.aac
-output_stylized.mp4
-```
-
----
-
 ## 🐧 Compatibilité ROCm
 
 Grâce à `onnxruntime`, tu peux faire tourner les modèles sur **GPU AMD** compatibles **ROCm** (Radeon Open Compute).
